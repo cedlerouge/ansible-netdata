@@ -130,3 +130,8 @@ netdata_updater: './netdata-updater.sh'
 netdata_user_info:
   group: 'netdata'
   user: 'netdata'
+
+# Define if http proxy is used
+# to use it uncomment the following
+#http_proxy: "http://mirror.netensia.net:8888"
+http_proxy: "None"
