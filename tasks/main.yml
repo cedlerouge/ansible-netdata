@@ -12,6 +12,9 @@
 - include: config.yml
   when: netdata_config
 
+- include: tweak.yml
+  when: netdata_tweak
+
 - include: update.yml
   when: netdata_update
 

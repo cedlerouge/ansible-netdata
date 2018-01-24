@@ -130,3 +130,9 @@ netdata_updater: './netdata-updater.sh'
 netdata_user_info:
   group: 'netdata'
   user: 'netdata'
+
+# Define if Netdata should be tweak
+netdata_tweak: true
+
+# Enable/disable sending emails
+netdata_send_email: "NO"

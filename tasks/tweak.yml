@@ -1,0 +1,6 @@
+---
+- name: tweak | change emails notification
+  lineinfile:
+    path: "/etc/netdata/health_alarm_notify.conf"
+    regexp: "^#? ?SEND_EMAIL=.*$"
+    line: 'SEND_EMAIL="{{ netdata_send_email }}"'
