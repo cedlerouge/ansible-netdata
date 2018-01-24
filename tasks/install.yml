@@ -1,4 +1,11 @@
 ---
+- name: git setup http proxy
+  git_config:
+    name: http.proxy
+    value: "{{ http_proxy }}}"
+    scope: global
+  when: http_proxy != 'None'
+
 - name: install | Cloning {{ netdata_git_repo }} to {{ netdata_source_dir }}
   git:
     repo: "{{ netdata_git_repo }}"
